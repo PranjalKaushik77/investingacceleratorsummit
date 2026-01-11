@@ -64,7 +64,7 @@ const Newsletter = () => {
             <Mail className="w-8 h-8 text-primary" />
           </motion.div>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-white font-serif mb-4">
-            Stay Updated
+            Free Guide
           </h2>
           <p className="text-xl text-gray-400 leading-relaxed">
           Subscribe to get a free daily investing guide that helps you grow and strengthen your portfolio.
