@@ -9,11 +9,15 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT || 5000
 
-// Middleware
+// CORS configuration - Allow all origins for now
 app.use(cors({
-  origin: process.env.FRONTEND_URL || '*', // Allow all origins in production, or specify your frontend URL
-  credentials: true
+  origin: '*', // Allow all origins
+  credentials: false,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }))
+
+// Middleware
 app.use(express.json())
 
 // MongoDB connection
@@ -41,4 +45,3 @@ app.get('/api/health', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`)
 })
-
