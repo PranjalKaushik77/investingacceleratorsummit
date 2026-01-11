@@ -67,7 +67,7 @@ const Newsletter = () => {
             Stay Updated
           </h2>
           <p className="text-xl text-gray-400 leading-relaxed">
-            Subscribe to our newsletter for exclusive updates, early access to recordings, and investment insights.
+          Subscribe to get a free daily investing guide that helps you grow and strengthen your portfolio.
           </p>
         </motion.div>
 
